@@ -1,9 +1,10 @@
 import socket
 import time 
+import sys 
 
 seqNum = 1
-UDP_IP = "127.0.0.1"
-UDP_PORT = 5005
+UDP_IP = sys.argv[1] 
+UDP_PORT = 1078 
 MESSAGE =  "{} {}".format(seqNum,time.time())  
 
 print "UDP target IP:", UDP_IP
